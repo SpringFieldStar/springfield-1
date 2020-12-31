@@ -8,4 +8,4 @@ jobs:
           password: 'SpringField!999'
     steps:
       - run: php --version
-      - run: php hello.php
+      - run: ls -al
