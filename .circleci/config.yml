@@ -1,0 +1,10 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: 'cimg/php:7.4.11'
+        auth:
+          username: 'springfieldstar'
+          password: 'SpringField!999'
+    steps:
+      - run: php --version
