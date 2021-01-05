@@ -2,10 +2,11 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: 'cimg/php:7.4.11'
+      - image: circleci/php:7.0-apache
         auth:
           username: 'springfieldstar'
           password: 'SpringField!999'
     steps:
-      - run: php --version
-      - run: ls -al
+      - checkout
+      - setup_remote_docker
+      - run: docker build -t springfieldstar/springfield .
