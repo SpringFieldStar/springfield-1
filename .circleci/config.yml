@@ -9,4 +9,5 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: docker build -t springfieldstar/springfield . && docker push springfieldstar/springfield
+      - run: docker build -t springfieldstar/springfield . 
+      - run: docker push springfieldstar/springfield
