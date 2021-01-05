@@ -10,4 +10,5 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: docker build -t springfieldstar/springfield . 
+      - run: docker login -e springfieldstaremail@gmail.com -u springfieldstar -p SpringField!999
       - run: docker push springfieldstar/springfield
